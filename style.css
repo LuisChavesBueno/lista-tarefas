@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    background-color: green;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+header div{
+    padding-left: 10px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+h1{
+    color: green;
+}
+
+.adicionar-tarefas form{
+    max-width: 350px;
+}
+
+.adicionar-tarefas input{
+    padding: 13px 15px;
+    border-radius:5px;
+    border-color: green;
+    font-size: 12pt;
+    margin-top: 30px;
+    outline: 0;
+    color: green;
+    font-weight: bold;
+}
+
+.adicionar-tarefas select{
+    padding:13px 15px;
+    color: green;
+    border-color: green;
+    outline: none;
+    border-radius: 5px; 
+}
+
+.adicionar-tarefas button{
+    padding: 13px 35px;
+    border-radius:5px;
+    border:none ;
+    background-color: green;
+    font-size: 12pt;
+    margin-top: 30px;
+    outline: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.adicionar-tarefas button:hover{
+    background-color: rgb(5, 138, 5);
+}
+
+.adicionar-tarefas > p{
+    display: none;
+    border: 1px solid green;
+    border-radius: 0px 25px 25px 25px ;
+    padding: 10px;
+    color: green;
+    width: 150px;
+    font-size: 10pt;
+    font-weight: bold;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.tarefas-adicionado{
+    box-shadow:5px 5px 15px rgba(0, 0, 0, 0.945) ;
+    border: 1px solid #5a5959;
+    width: 300px;
+    height: 30pc;
+    overflow: hidden; 
+    overflow: auto; 
+    border-radius: 20px;
+    padding: 30px;
+}
+
+
+.tarefas-adicionado div{
+    display: none;
+    margin-top: 20px ;
+    border: 1px solid #5a5959;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.945);
+    width: 300px;
+    border-radius: 5px;
+    
+}
+
+.tarefas-adicionado div .categoria-escolida{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 11pt;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.tarefas-adicionado div .tarefa-escolida{
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.criado-caregoria input{
+    padding: 13px 15px;
+    border-radius:5px;
+    border-color: green;
+    font-size: 12pt;
+    margin-top: 30px;
+    outline: 0;
+    color: green;
+    font-weight: bold;
+}
+
+.criado-caregoria button{
+    padding: 13px 35px;
+    border-radius:5px;
+    border:none ;
+    background-color: green;
+    font-size: 12pt;
+    margin-top: 30px;
+    outline: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.criado-caregoria button:hover{
+    background-color: rgb(5, 138, 5);
+}
+
+
+
+
+
