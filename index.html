@@ -1,62 +1,167 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Cardapio</title>
 </head>
 <body>
-    
     <header>
-        <div>
-           Tarefas Adicionadas: <span class="id"></span>
+        <div id="cabecalho">
+            <div id="logo"><img width="50" height="50" src="img/logo-removebg-preview.png" alt=""></div>
+            <div>CARDAPIO</div>
+            <div id="pedidos" onclick="pedidos()">pedidos</div>
         </div>
     </header>
-    
     <main>
-        <div class="adicionar-tarefas">
-            <h1> Lista de Tarefas</h1>
-            <form action="" class="form">
-                <input type="text" class="tarefa" placeholder="Digite a Tarefa:" maxlength="30" required>
-        
-                <select name="" id="" class="categoria">
-                    <option value="" color="gree">Categoria</option>
-                    <option value="casa">Casa</option>
-                    <option value="trabalho">Trabalho</option>
-                </select>
-        
-                
-                <button>Criar</button>
-            </form>
-
-            <p>Categoria Adicionada</p>
+        <div>
+            <div id="valor">Valor: </div>
         </div>
-        
-            <div class="tarefas-adicionado">
-                <h1>Tarefas </h1>
-        
-                <section class="lista-tarefas">
-                    <div>
-                        <!---<p class="categoria-escolida">Casa</p>
-                        <p class="tarefa-escolida">Arruamar a cama</p>-->
-        
-        
-                    </div>
-                </section>
-            </div>
-        
-        <div class="criado-caregoria">
-            <h1>Adicionar na Categoria</h1>
-            
-            <form action="" class="criar-categoria">
-                <input type="text" class="digite-categori-criar" placeholder="Adicionar Categoria:" maxlength="20" required>
-                <button>Criar</button>
-            </form>
-
+        <div>
+            <input type="text" id="pesquisar" onclick="Pesquisar()" placeholder="Pesquisar" size="30">
         </div>
     </main>
+    <footer>
+        <div class="produto">
+            <img width="230" height="200" src="img/Affogato.webp" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Affogato</p>
+                <div class="precoConfi">R$<p class="preco">15,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="produto">
+            <img width="230" height="200" src="img/cafe_americano.webp" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Americano</p>
+                <div class="precoConfi">R$<p class="preco">10,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
 
-    <script src="index.js"></script>
+        <div class="produto">
+            <img width="230" height="200" src="img/cafe_gelado.webp" alt="" class="img">
+            <img src="" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Café Gelado</p>
+                <div class="precoConfi">R$<p class="preco">12,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img width="230" height="200" src="img/cafe_irlandes.jpg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Café Irlandês</p>
+                <div class="precoConfi">R$<p class="preco">20,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img width="230" height="200" src="img/cafe_vienense.jpg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Café Vienense</p>
+                <div class="precoConfi">R$<p class="preco">14,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img width="230" height="200" src="img/Cappuccino.jpeg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Cappuccino</p>
+                <div class="precoConfi">R$<p class="preco">12,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="produto">
+            <img width="230" height="200" src="img/Expresso.jpeg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Expresso</p>
+                <div class="precoConfi">R$<p class="preco">8,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img width="230" height="200" src="img/Flat_White.jpeg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Flat White</p>
+                <div class="precoConfi">R$<p class="preco">13,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img width="230" height="200" src="img/Latte.jpeg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Latte (Café com leite)</p>
+                <div class="precoConfi">R$<p class="preco">12,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img width="230" height="200" src="img/Macchiato.jpeg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Macchiato</p>
+                <div class="precoConfi">R$<p class="preco">10,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+       <div class="produto">
+            <img width="230" height="200" src="img/Mocha.jpeg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Mocha</p>
+                <div class="precoConfi">R$<p class="preco">14,00</p></div>
+                
+            
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img width="230" height="200" src="img/Ristretto.jpeg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Ristretto</p>
+                <div class="precoConfi">R$<p class="preco">9,00</p></div>
+                
+            
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img width="230" height="200" src="img/Frappuccio.jpeg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Frappuccio</p>
+                <div class="precoConfi">R$<p class="preco">8,00</p></div>
+                
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
+<style></style>
