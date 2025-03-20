@@ -11,22 +11,36 @@
         <div id="cabecalho">
             <div id="logo"><img width="70" height="70" src="img/logo-removebg-preview.png" alt=""></div>
             <div>CARDAPIO</div>
-            <div id="pedidos" onclick="pedidos()">pedidos</div>
+            <div id="pedidos" onclick="pedidos()">FAZER PEDIDO</div>
         </div>
     </header>
     <main>
+        <div id="tela_comprar">
+            <div id="anivesario">
+                <p>ANIVERSARIANTE</p>
+            </div>
+
+            <div class="pedidos_feitos">
+                <div class="produtos_pedidos"> 
+
+                </div>
+            </div>
+
+            <div id="fazer_pedido">
+                    <input type="text" placeholder="como de chamar?" id="apelido">
+                    <input type="button" value="PEDIR" id="pedido_botao">    
+            </div>
+        </div>
+        
         <div>
             <div id="valor">Valor: </div>
-        </div>
-        <div>
-            <input type="text" id="pesquisar" onclick="Pesquisar()" placeholder="Pesquisar" size="30">
         </div>
     </main>
     <footer>
         <div class="produto">
-            <img width="400" height="500" src="img/Affogato.webp" alt="" class="img">
+            <img width="400" height="500" src="img/Affogato.webp" alt="" class="img" id="Affogato">
             <div class="nomePreco">
-                <p class="nome">Affogato</p>
+                <p class="nome" id="nomeAffogato">Affogato</p>
                 <div class="precoConfi">R$<p class="preco">15,00</p></div>
                     <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
                 </div>
@@ -35,9 +49,9 @@
         
         
         <div class="produto">
-            <img width="400" height="500" src="img/cafe_americano.webp" alt="" class="img">
+            <img width="400" height="500" src="img/cafe_americano.webp" alt="" class="img" id="cafe_americano">
             <div class="nomePreco">
-                <p class="nome">Americano</p>
+                <p class="nome" id="nomecafe_americano">Americano</p>
                 <div class="precoConfi">R$<p class="preco">10,00</p></div>
                     <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
                 </div>
@@ -45,10 +59,10 @@
         </div>
 
         <div class="produto">
-            <img width="400" height="500" src="img/cafe_gelado.webp" alt="" class="img">
+            <img width="400" height="500" src="img/cafe_gelado.webp" alt="" class="img" id="cafe_gelado">
             <img src="" alt="" class="img">
             <div class="nomePreco">
-                <p class="nome">Café Gelado</p>
+                <p class="nome" id="nomecafe_gelado">Café Gelado</p>
                 <div class="precoConfi">R$<p class="preco">12,00</p></div>
                     <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
                 </div>
@@ -56,9 +70,9 @@
         </div>
 
         <div class="produto">
-            <img width="400" height="500" src="img/cafe_irlandes.jpg" alt="" class="img">
+            <img width="400" height="500" src="img/cafe_irlandes.jpg" alt="" class="img" id="cafe_irlandes">
             <div class="nomePreco">
-                <p class="nome">Café Irlandês</p>
+                <p class="nome" id="nomeCafe_irlandes">Café Irlandês</p>
                 <div class="precoConfi">R$<p class="preco">20,00</p></div>
                     <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
                 </div>
@@ -66,9 +80,9 @@
         </div>
 
         <div class="produto">
-            <img width="400" height="500" src="img/cafe_vienense.jpg" alt="" class="img">
+            <img width="400" height="500" src="img/cafe_vienense.jpg" alt="" class="img" id="cafe_vienense">
             <div class="nomePreco">
-                <p class="nome">Café Vienense</p>
+                <p class="nome" id="nomeCafe_vienense">Café Vienense</p>
                 <div class="precoConfi">R$<p class="preco">14,00</p></div>
                     <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
                 </div>
@@ -76,9 +90,9 @@
         </div>
 
         <div class="produto">
-            <img width="400" height="500" src="img/Cappuccino.jpeg" alt="" class="img">
+            <img width="400" height="500" src="img/Cappuccino.jpeg" alt="" class="img" id="Cappuccino">
             <div class="nomePreco">
-                <p class="nome">Cappuccino</p>
+                <p class="nome" id="nomeCappuccio">Cappuccino</p>
                 <div class="precoConfi">R$<p class="preco">12,00</p></div>
                     <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
                 </div>
@@ -87,9 +101,9 @@
 
         
         <div class="produto">
-            <img width="400" height="500" src="img/Expresso.jpeg" alt="" class="img">
+            <img width="400" height="500" src="img/Expresso.jpeg" alt="" class="img" id="Expresso">
             <div class="nomePreco">
-                <p class="nome">Expresso</p>
+                <p class="nome" id="nomeExpresso">Expresso</p>
                 <div class="precoConfi">R$<p class="preco">8,00</p></div>
                     <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
                 </div>
@@ -97,9 +111,9 @@
         </div>
 
         <div class="produto">
-            <img width="400" height="500" src="img/Flat_White.jpeg" alt="" class="img">
+            <img width="400" height="500" src="img/Flat_White.jpeg" alt="" class="img" id="Flat_White">
             <div class="nomePreco">
-                <p class="nome">Flat White</p>
+                <p class="nome" id="nomeFlat_White">Flat White</p>
                 <div class="precoConfi">R$<p class="preco">13,00</p></div>
                     <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
                 </div>
@@ -107,9 +121,9 @@
         </div>
 
         <div class="produto">
-            <img width="400" height="500" src="img/Latte.jpeg" alt="" class="img">
+            <img width="400" height="500" src="img/Latte.jpeg" alt="" class="img" id="latte">
             <div class="nomePreco">
-                <p class="nome">Latte (Café com leite)</p>
+                <p class="nome" id="nomeLatte">Latte (Café com leite)</p>
                 <div class="precoConfi">R$<p class="preco">12,00</p></div>
                     <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
                 </div>
@@ -117,9 +131,9 @@
         </div>
 
         <div class="produto">
-            <img width="400" height="500" src="img/Macchiato.jpeg" alt="" class="img">
+            <img width="400" height="500" src="img/Macchiato.jpeg" alt="" class="img" id="Macchiato">
             <div class="nomePreco">
-                <p class="nome">Macchiato</p>
+                <p class="nome" id="nomeMacchiato">Macchiato</p>
                 <div class="precoConfi">R$<p class="preco">10,00</p></div>
                     <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
                 </div>
@@ -127,9 +141,9 @@
         </div>
 
        <div class="produto">
-        <img width="400" height="500" src="img/Mocha.jpeg" alt="" class="img">
+        <img width="400" height="500" src="img/Mocha.jpeg" alt="" class="img" id="Mocha">
             <div class="nomePreco">
-                <p class="nome">Mocha</p>
+                <p class="nome" id="nomeMocha">Mocha</p>
                 <div class="precoConfi">R$<p class="preco">14,00</p></div>
                 
             
@@ -139,9 +153,9 @@
         </div>
 
         <div class="produto">
-            <img width="400" height="500" src="img/Ristretto.jpeg" alt="" class="img">
+            <img width="400" height="500" src="img/Ristretto.jpeg" alt="" class="img" id="Ristretto">
             <div class="nomePreco">
-                <p class="nome">Ristretto</p>
+                <p class="nome" id="nomeRistretto">Ristretto</p>
                 <div class="precoConfi">R$<p class="preco">9,00</p></div>
                 
             
@@ -151,9 +165,9 @@
         </div>
 
         <div class="produto">
-            <img width="400" height="500" src="img/Frappuccio.jpeg" alt="" class="img">
+            <img width="400" height="500" src="img/Frappuccio.jpeg" alt="" class="img" id="Frappuccio">
             <div class="nomePreco">
-                <p class="nome">Frappuccio</p>
+                <p class="nome" id="nomeFrappuccio">Frappuccio</p>
                 <div class="precoConfi">R$<p class="preco">8,00</p></div>
                 
                     <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
@@ -164,4 +178,3 @@
     <script src="index.js"></script>
 </body>
 </html>
-<style></style>

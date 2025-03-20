@@ -26,6 +26,60 @@ header{
     cursor: pointer;
 }
 
+#tela_comprar{
+    display: none;
+    margin: auto;
+   width: 300px;
+   height: 10000px;
+    color: #ffff;
+    background-color: #ac7206;
+    padding: 20px;
+    border-radius:20px ;
+}
+
+#anivesario{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #573902;
+    padding: 5px;
+    border-radius: 15px
+}
+
+#fazer_pedido #apelido{
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size:20px ;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#fazer_pedido #pedido_botao{
+    color: #ffff;
+    margin-top: 30px;
+    margin-left:20px ;
+    font-size: 20px;
+    padding:10px 60px;
+    border-radius:5px ;
+    border: none;
+    background-color: #964B00;
+}
+
+.pedidos_feitos{
+    column-count: 2;
+    margin-top: 50px;
+}
+
+.pedidos_feitos p{
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.pedidos_feitos img{
+    border-radius: 30px;
+}
 /*////////////////////////////////////////////////////////////////////////////////*/
 .precoConfi{
     display: flex;
@@ -56,7 +110,7 @@ footer .produto{
    font-family: Arial, Helvetica, sans-serif;
     color:white;
     margin-left: 30px;
-    margin-right: 30px;
+    margin-right: 220px;
     border:solid 1px #FFA500;
     border-radius: 5px;
     margin-top: 20px;
@@ -94,7 +148,7 @@ footer .preco{
 footer .botao {
     color: #ffff;
     background-color: #FFA500;
-    padding-top: 10px;
+    padding: 10px;
     text-align: center;
     font-weight: bold;
 }
