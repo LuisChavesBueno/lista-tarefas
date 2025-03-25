@@ -1,162 +1,142 @@
-body{
-    background-color:#964B00 ;
-}
+body {
+    background-color: #964B00;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-
-header{
+  header {
     background-color: #FFA500;
     border-radius: 10px;
-    margin-right: 7px;
-}
+    margin: 20px 0;
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+  }
 
-#cabecalho{
+  #cabecalho {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     color: white;
-    
-    
-}
+    flex-wrap: wrap;
+  }
 
-#cabecalho div{
-    margin: auto;
-    padding: 5px px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#pedidos{
+  #pedidos {
     cursor: pointer;
-}
+    background-color: #964B00;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+  }
 
-#tela_comprar{
+  main {
+    width: 90%;
+    text-align: center;
+    color: #fff;
+  }
+
+  #tela_comprar {
     display: none;
-    margin: auto;
-   width: 300px;
-   height: 10000px;
-    color: #ffff;
     background-color: #ac7206;
     padding: 20px;
-    border-radius:20px ;
-}
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+  }
 
-#anivesario{
+  #anivesario {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     background-color: #573902;
-    padding: 5px;
-    border-radius: 15px
-}
+    padding: 10px;
+    border-radius: 15px;
+  }
 
-#fazer_pedido #apelido{
-    margin-left: 20px;
+  #fazer_pedido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 30px;
-    font-size:20px ;
+  }
+
+  #fazer_pedido input[type="text"] {
+    font-size: 20px;
     text-align: center;
     padding: 10px;
     border-radius: 5px;
     border: none;
-}
+    margin-bottom: 20px;
+    width: 80%;
+  }
 
-#fazer_pedido #pedido_botao{
-    color: #ffff;
-    margin-top: 30px;
-    margin-left:20px ;
+  #fazer_pedido input[type="button"] {
+    color: #fff;
     font-size: 20px;
-    padding:10px 60px;
-    border-radius:5px ;
+    padding: 10px 40px;
+    border-radius: 5px;
     border: none;
     background-color: #964B00;
-}
+    cursor: pointer;
+  }
 
-.pedidos_feitos{
-    column-count: 2;
-    margin-top: 50px;
-}
-
-.pedidos_feitos p{
-    font-weight: bold;
-    margin-right: 50px;
-}
-
-.pedidos_feitos img{
-    border-radius: 30px;
-}
-/*////////////////////////////////////////////////////////////////////////////////*/
-.precoConfi{
-    display: flex;
-}
-
-main{
-    margin-top: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-main #valor{
-    
-    padding-bottom:20px ;
-    color: #ffff;
-}
-
-main #pesquisar{
-    border-radius: 20px;
-    border: none;
-    font-size: 15px;
-    padding: 5px 5px;
-
-}
-
-/*///////////////////////////////////////////////??/////*/
-
-footer .produto{
-   font-family: Arial, Helvetica, sans-serif;
-    color:white;
-    margin-left: 30px;
-    margin-right: 30px;
-    border:solid 1px #FFA500;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-
-footer .info{
-    display: none;
-    font-size: 15px;
-    color: white;
-    background-color: #573902;
-    padding: 10px;
-    margin-top: 20px;
-   border-radius: 5px;
-    
-}
-
-footer  .img{
-   
-   border-radius: 5px;
-}
-
-footer .produto .nomePreco{
-    color:#ffff;
-}
-
-footer .nome{
-    padding-left: 10px;
-}
-
-footer .preco{
-    padding-left: 10px;
-}
-
-footer .botao {
-    color: #ffff;
-    background-color: #FFA500;
-    padding: 10px;
+  .pedidos_feitos {
+    margin-top: 30px;
     text-align: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .produto {
+    color: white;
+    border: solid 1px #FFA500;
+    border-radius: 10px;
+    margin: 20px 0;
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    background-color: #573902;
+  }
+
+  .produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .nomePreco {
+    padding: 15px;
+  }
+
+  .precoConfi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .botao {
+    background-color: #FFA500;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
     font-weight: bold;
-}
+  }
 
-footer .detalhes{
-    font-size: 12px;
-    padding-left: 15px;
-    padding-bottom:5px ;
-    text-decoration: underline;
-}
-
+  #valor {
+    font-size: 20px;
+    padding: 20px 0;
+  }
