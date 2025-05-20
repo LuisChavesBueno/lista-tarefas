@@ -1,142 +1,131 @@
-body {
-    background-color: #964B00;
-    margin: 0;
-    padding: 0;
+*{
+    margin: 0px;
+    padding: 0px;
+    ;
+}
+
+/*Texto e Pedido      ///////////////////////////////////////////////////////////////////////////////////*/
+
+header #texto-pedido{
+    background-color:  #804000;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+header #texto-pedido h1{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0px;
+    color: #fff;
+}
+
+header #texto-pedido button#pedidos{
+    margin-right: 20px;
+    padding: 8px 10px;
+    border-radius: 10px 0px 10px 10px;
+    border: none;
+}
+
+header #texto-pedido p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    position: sticky;
+    right:  28px;
+    background-color: #b6b600;
+    border-radius:50px ;
+    padding: 3px 6px;
+}
+
+/*cabeçalho///////////////////////////////////////////////////////////////////////////////////*/
+
+header #cabecalho ul{
+    margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     align-items: center;
-  }
+    list-style-type: none;
+}
 
-  header {
-    background-color: #FFA500;
-    border-radius: 10px;
-    margin: 20px 0;
-    width: 90%;
-    text-align: center;
-    padding: 10px;
-  }
-
-  #cabecalho {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    color: white;
-    flex-wrap: wrap;
-  }
-
-  #pedidos {
+header #cabecalho ul li{
+    margin: auto;
     cursor: pointer;
-    background-color: #964B00;
-    padding: 10px 20px;
+}
+
+/*/////// Produto ///////////////////////////////////////////////////////////////////////////*/
+
+main div.produto .separar{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 50px 10px 20px;
+    display: flex;
+}
+
+main div.produto img{
+    width: 70px;
+    height: 70px;
     border-radius: 10px;
-    color: white;
-    font-weight: bold;
-  }
+}
 
-  main {
-    width: 90%;
-    text-align: center;
+main div.produto div{
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+main div.produto div h2{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+main div.produto div p{
+    font-size: 12px;
+}
+
+main div.produto div .botao-pedir{
+    padding: 2px 15px;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+    background-color: #804000;
     color: #fff;
-  }
+    font-weight: 500;
+    cursor: pointer;
+}
 
-  #tela_comprar {
-    display: none;
-    background-color: #ac7206;
-    padding: 20px;
+/*/////// virar membro ////////////////////////////////////////////////////////////////*/
+
+footer {
+    display: block;
+    position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #804000;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer div{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div p{
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+footer div p a{
+    color: #fff;
+    font-weight: bold;
+}
+
+footer div button{
+    font-size: 10px;
+    margin-right: 20px;
     border-radius: 20px;
-    margin: 20px auto;
-    max-width: 400px;
-  }
-
-  #anivesario {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    background-color: #573902;
-    padding: 10px;
-    border-radius: 15px;
-  }
-
-  #fazer_pedido {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-  }
-
-  #fazer_pedido input[type="text"] {
-    font-size: 20px;
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
     border: none;
-    margin-bottom: 20px;
-    width: 80%;
-  }
-
-  #fazer_pedido input[type="button"] {
-    color: #fff;
-    font-size: 20px;
-    padding: 10px 40px;
-    border-radius: 5px;
-    border: none;
-    background-color: #964B00;
-    cursor: pointer;
-  }
-
-  .pedidos_feitos {
-    margin-top: 30px;
-    text-align: center;
-  }
-
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .produto {
-    color: white;
-    border: solid 1px #FFA500;
-    border-radius: 10px;
-    margin: 20px 0;
-    width: 90%;
-    max-width: 450px;
-    text-align: center;
-    background-color: #573902;
-  }
-
-  .produto img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0 0;
-  }
-
-  .nomePreco {
-    padding: 15px;
-  }
-
-  .precoConfi {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-  }
-
-  .botao {
-    background-color: #FFA500;
-    color: #fff;
     padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-
-  #valor {
-    font-size: 20px;
-    padding: 20px 0;
-  }
+}
