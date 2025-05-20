@@ -4,13 +4,15 @@ let pedidosFeitos = document.querySelector("#pedidos_feitos");
 let footer = document.getElementById("footer");
 
 num = 0; 
+valorPedido =0; 
 
 class Produto {
-    constructor(nome, img, titulo, descri) {
+    constructor(nome, img, titulo, descri, id) {
         this.nome = nome;
         this.img = img;
         this.titulo = titulo;
         this.descri = descri;
+        this.id = id;
     }
 
     cafe() {
@@ -22,9 +24,19 @@ class Produto {
         let p = document.createElement("p"); 
         let img = document.createElement("img")
 
-        let botao = document.createElement("button");
-        botao.className = "botao-pedir";
-        botao.innerText = "Pegar";
+        let botaoDiminuirPedido = document.createElement("button");
+        botaoDiminuirPedido.className = "botao-pedir"; 
+        botaoDiminuirPedido.id = "tirar";
+        botaoDiminuirPedido.innerText = "-";
+        
+        let botaoPedido = document.createElement("button");
+        botaoPedido.className = "botao-pedir";
+        botaoPedido.innerText = valorPedido;
+
+        let botaoAlmentarPedido = document.createElement("button"); 
+        botaoAlmentarPedido.className = "botao-pedir";
+        botaoAlmentarPedido.id = "colocar";
+        botaoAlmentarPedido.innerText = "+"; 
 
         img.src = this.img
         h2.textContent = this.titulo;
@@ -32,13 +44,9 @@ class Produto {
 
         div.appendChild(h2);
         div.appendChild(p);
-        div.appendChild(botao);
-
-        botao.addEventListener("click", () => {
-        num += 1;
-        pedidosFeitos.innerHTML = num; 
-        })
-    
+        div.appendChild(botaoDiminuirPedido);
+        div.appendChild(botaoPedido);
+        div.appendChild(botaoAlmentarPedido);
 
         separar.appendChild(img)
         separar.appendChild(div);

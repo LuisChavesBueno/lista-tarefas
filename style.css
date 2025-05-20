@@ -87,6 +87,7 @@ main div.produto div button{
     border: none;
     border-radius: 10px;
     margin-top: 10px;
+    margin-left: 5px;
     background-color: #804000;
     color: #fff;
     font-weight: 500;
