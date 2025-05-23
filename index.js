@@ -29,14 +29,21 @@ class Produto {
         botaoDiminuirPedido.id = "tirar";
         botaoDiminuirPedido.innerText = "-";
         
-        let botaoPedido = document.createElement("button");
-        botaoPedido.className = "botao-pedir";
-        botaoPedido.innerText = valorPedido;
+        let QuatidadePedida = document.createElement("p");
+        QuatidadePedida.className = "botao-pedir";
+        QuatidadePedida.id = "quatidade-Pedida";
+        QuatidadePedida.innerText = valorPedido;
 
         let botaoAlmentarPedido = document.createElement("button"); 
         botaoAlmentarPedido.className = "botao-pedir";
         botaoAlmentarPedido.id = "colocar";
         botaoAlmentarPedido.innerText = "+"; 
+
+        let botoes = document.createElement("div"); 
+        botoes.id ="botoes"; 
+        botoes.appendChild(botaoAlmentarPedido);
+        botoes.appendChild(QuatidadePedida);
+        botoes.appendChild(botaoDiminuirPedido);
 
         img.src = this.img
         h2.textContent = this.titulo;
@@ -44,14 +51,27 @@ class Produto {
 
         div.appendChild(h2);
         div.appendChild(p);
-        div.appendChild(botaoDiminuirPedido);
-        div.appendChild(botaoPedido);
-        div.appendChild(botaoAlmentarPedido);
+        div.appendChild(botoes);
 
         separar.appendChild(img)
         separar.appendChild(div);
         produto.appendChild(separar);
 
+        this.QuatidadePedidaCliques(botaoAlmentarPedido, QuatidadePedida, botaoDiminuirPedido);
+    }
+
+    QuatidadePedidaCliques(a , q , d){
+        a.addEventListener('click', () => {
+                valorPedido += 1; 
+                q.innerText = valorPedido  
+        })
+
+        d.addEventListener('click', () =>{
+            if(valorPedido != 0){
+                valorPedido -= 1; 
+                q.innerText = valorPedido;
+            }else{q.innerText = 0}
+        })
     }
 }
 
