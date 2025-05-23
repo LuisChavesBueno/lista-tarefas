@@ -29,20 +29,19 @@ class Produto {
         botaoDiminuirPedido.id = "tirar";
         botaoDiminuirPedido.innerText = "-";
         
-        let QuatidadePedida = document.createElement("p");
-        QuatidadePedida.className = "botao-pedir";
-        QuatidadePedida.id = "quatidade-Pedida";
-        QuatidadePedida.innerText = valorPedido;
-
         let botaoAlmentarPedido = document.createElement("button"); 
         botaoAlmentarPedido.className = "botao-pedir";
         botaoAlmentarPedido.id = "colocar";
         botaoAlmentarPedido.innerText = "+"; 
 
+        let QuatidadePedida = document.createElement("p");
+        QuatidadePedida.className = "botao-pedir";
+        QuatidadePedida.id = "quatidade-pedida";
+        QuatidadePedida.innerText = valorPedido;
+
         let botoes = document.createElement("div"); 
         botoes.id ="botoes"; 
         botoes.appendChild(botaoAlmentarPedido);
-        botoes.appendChild(QuatidadePedida);
         botoes.appendChild(botaoDiminuirPedido);
 
         img.src = this.img
@@ -52,6 +51,7 @@ class Produto {
         div.appendChild(h2);
         div.appendChild(p);
         div.appendChild(botoes);
+        div.appendChild(QuatidadePedida)
 
         separar.appendChild(img)
         separar.appendChild(div);

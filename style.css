@@ -87,6 +87,7 @@ main div.produto div #botoes{
 }
 
 main div.produto div .botao-pedir{
+    text-align: center;
     padding: 4px 30px;
     font-size: 15px;
     border: none;
@@ -99,9 +100,10 @@ main div.produto div .botao-pedir{
     cursor: pointer;
 }
 
-main div.produto div .quatidade-Pedida{
-    padding: 2px 3px;
+main div.produto div #quatidade-pedida{
+    width: 100px;
 }
+
 
 /*/////// virar membro ////////////////////////////////////////////////////////////////*/
 
