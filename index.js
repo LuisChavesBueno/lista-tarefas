@@ -3,19 +3,10 @@ let BotaoPedidosFeitos = document.querySelector(".botao-pedir");
 let pedidosFeitos = document.querySelector("#pedidos_feitos");
 let footer = document.getElementById("footer");
 
-num = 0; 
-valorPedido = [
-    affogato = 0, 
-    cafeAmericano = 0, 
-    cafeGelado = 0,  
-    cafeIrlandes = 0, 
-    cafeVienense= 0, 
-    expresso=0, 
-    flatWhite =0, 
-    latte =0, 
-    machiato = 0, 
-    mocha= 0, 
-    restretto = 0]
+
+
+valorPedido = []
+console.log(valorPedido)
 
 class Produto {
     constructor(nome, img, titulo, descri, id) {
@@ -24,7 +15,6 @@ class Produto {
         this.titulo = titulo;
         this.descri = descri;
         this.id = id;
-        this.pedidos =0;
     }
 
     cafe() {
@@ -49,7 +39,7 @@ class Produto {
         let QuatidadePedida = document.createElement("p");
         QuatidadePedida.className = "botao-pedir";
         QuatidadePedida.id = "quatidade-pedida";
-        QuatidadePedida.innerText = this.pedidos;
+        QuatidadePedida.style.display = "none"
 
         let botoes = document.createElement("div"); 
         botoes.id ="botoes"; 
@@ -75,68 +65,107 @@ class Produto {
     QuatidadePedidaCliques(a , q , d, IDpedido){
         switch(this.id){
             case "affogato": 
+               let valorPedioAffogato = 0;
                 a.addEventListener('click', () => {
-                     alert("affogato")
+                    valorPedioAffogato += 1; 
+                    q.innerText = valorPedioAffogato;
+                     q.style.display = "block"
                 })
                 break;
             case "cafeAmaricano":
+                let valorPedidoAmericano = 0;
                 a.addEventListener('click', () => {
-                    alert("cafe amaricano")
+                    valorPedidoAmericano += 1; 
+                    q.innerText = valorPedidoAmericano;
+                     q.style.display = "block";
                 })
                 break;
             case "cafeGelado":
-                 a.addEventListener('click', () => {
-                    alert("cafe Gelado")
+                let valorPedidGelado = 0;
+                a.addEventListener('click', () => {
+                     valorPedidGelado += 1; 
+                    q.innerText = valorPedidGelado;
+                     q.style.display = "block"
                 })
                 break;
             case "cafeIrlandes":
-                 a.addEventListener('click', () => {
-                    alert("cafeIrlandes")
+                let valorPedidoIrlandes = 0; 
+                a.addEventListener('click', () => {
+                     valorPedidoIrlandes += 1; 
+                    q.innerText = valorPedidoIrlandes;
+                     q.style.display = "block"
                 })
                 break;
             case "cafeVienense":
-                 a.addEventListener('click', () => {
-                    alert("cafeVienense")
+                let ValorPedidoVienense = 0;  
+                a.addEventListener('click', () => {
+                     ValorPedidoVienense += 1; 
+                    q.innerText = ValorPedidoVienense;
+                     q.style.display = "block"
                 })
                 break;
               case "cappuccino":
-                 a.addEventListener('click', () => {
-                    alert("cappuccino")
+                let valorPedidoCappuccino = 0; 
+                a.addEventListener('click', () => {
+                     valorPedidoCappuccino += 1; 
+                    q.innerText = valorPedidoCappuccino;
+                     q.style.display = "block"
                 })
                 break;
             case "expresso":
-                 a.addEventListener('click', () => {
-                    alert("expresso")
+                let valorPedidExpresso = 0; 
+                a.addEventListener('click', () => {
+                     valorPedidExpresso += 1; 
+                    q.innerText = valorPedidExpresso;
+                     q.style.display = "block"
                 })
                 break;
             case "flatWhite":
-                 a.addEventListener('click', () => {
-                    alert("flat white")
+                let valorPedidoFlatWhite = 0; 
+                a.addEventListener('click', () => {
+                    valorPedidoFlatWhite += 1; 
+                    q.innerText = valorPedidoFlatWhite;
+                     q.style.display = "block"
                 })
                 break;
             case "fracappuccino":
-                 a.addEventListener('click', () => {
-                    alert("fracappuccino")
+                let valorPedidoFracappuccio =0; 
+                a.addEventListener('click', () => {
+                     valorPedidoFracappuccio += 1; 
+                    q.innerText = valorPedidoFracappuccio;
+                     q.style.display = "block"
                 })
                 break;
             case "latte":
-                 a.addEventListener('click', () => {
-                    alert("latte")
+                let valorPedidoLatte = 0; 
+                a.addEventListener('click', () => {
+                     valorPedidoLatte += 1; 
+                    q.innerText = valorPedidoLatte;
+                     q.style.display = "block"
                 })
                 break;
             case "macchiato":
-                 a.addEventListener('click', () => {
-                    alert("macchiatto")
+                let valorPedidomacchiato = 0; 
+                a.addEventListener('click', () => {
+                     valorPedidomacchiato += 1; 
+                    q.innerText = valorPedidomacchiato;
+                     q.style.display = "block"
                 })
                 break;
             case "mocha":
+                let valorPedidoMocha = 0;
                 a.addEventListener('click', () => {
-                    alert("mocha")
+                     valorPedidoMocha += 1; 
+                    q.innerText = valorPedidoMocha;
+                     q.style.display = "block"
                 })
                 break;
             case "ristretto": 
+                let valorPedidoRistretto = 0; 
                 a.addEventListener('click', () => {
-                    alert("ristretto")
+                   valorPedidoRistretto += 1; 
+                    q.innerText = valorPedidoRistretto;
+                     q.style.display = "block"
                 })
             }
             
